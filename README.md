@@ -8,7 +8,7 @@ Firmware development for microcontrollers and processors depends on interpretati
 
 This document introduces the **Machine Readable Datasheet (MRD)**, a specification that encodes the complete firmware-visible programming model of a hardware device, including hardware pins, pin multiplexing, registers, functional blocks, interfaces, operational constraints, and documented errata, as a single validated, machine-readable firmware contract. MRD is defined to replace the combined datasheet and programming manuals with a deterministic representation sufficient for automated firmware generation without interpretation of informal documentation.
 
-MRD applies uniformly to sensors, drivers, displays, wireless, logic, LEDs, switches, microcontrollers (MCUs), microprocessors (MPUs), central processing units (CPUs), and compute accelerators such as neural or signal processing units (NPUs, DSPs), provided the device exposes firmware-visible configuration or control interfaces. Accelerators are modeled solely in terms of firmware-visible registers, memory-mapped interfaces, and operational constraints, without reference to internal execution models or algorithms.
+MRD provides a unified specification for firmware-visible hardware, covering sensors, wireless interfaces, displays, drivers, logic devices, switches, LEDs, MCUs, MPUs/CPUs, and compute accelerators (NPUs, DSPs). Devices are represented exclusively through registers, memory-mapped interfaces, and defined constraints, abstracting away internal architectures and execution models.
 
 ## 1. Introduction
 
