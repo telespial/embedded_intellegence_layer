@@ -1,0 +1,81 @@
+{
+  "mrd_version": "1.0.0",
+  "vendor": "VendorName",
+  "device": "DeviceName",
+  "revision": "RevA",
+  "units": "SI",
+  "references": [
+    {
+      "source": "Device Datasheet",
+      "revision": "RevX",
+      "date": "",
+      "notes": "https://example.com",
+      "type": "datasheet",
+      "title": "Device Datasheet",
+      "url": "https://example.com"
+    }
+  ],
+  "pins": [],
+  "interfaces": [
+    {
+      "name": "I2C0",
+      "type": "I2C",
+      "max_frequency_hz": 400000,
+      "addressing": {
+        "width": 7,
+        "address_pins": []
+      }
+    }
+  ],
+  "register_blocks": [
+    {
+      "name": "MAIN",
+      "base": "0x00",
+      "base_address": "0x00",
+      "registers": [
+        {
+          "name": "CTRL",
+          "offset": "0x00",
+          "size": 8,
+          "access": "RW",
+          "reset": 0,
+          "fields": [
+            {
+              "name": "ENABLE",
+              "bit_offset": 0,
+              "bit_width": 1,
+              "access": "RW",
+              "side_effect": "none",
+              "description": "Enable control bit.",
+              "enumerations": [
+                {
+                  "name": "Disabled",
+                  "value": 0
+                },
+                {
+                  "name": "Enabled",
+                  "value": 1
+                }
+              ],
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "name": "init_sequence",
+      "steps": [
+        {
+          "write": {
+            "register": "MAIN.CTRL",
+            "value": 1
+          }
+        }
+      ]
+    }
+  ],
+  "errata": []
+}

@@ -1,0 +1,48 @@
+{
+  "vendor": "nxp",
+  "family": "mcxn",
+  "device": "mcxn947",
+  "revision": "A0",
+  "core": {
+    "architecture": "arm",
+    "name": "cortex-m33",
+    "frequency_mhz": 150,
+    "fpu": true,
+    "dsp": true
+  },
+  "memory": {
+    "flash_kb": 2048,
+    "ram_kb": 512
+  },
+  "interrupt_controller": {
+    "type": "nvic",
+    "vector_count": 160,
+    "priority_levels": 16
+  },
+  "peripherals": [
+    {
+      "instance": "UART0",
+      "type": "uart",
+      "status": "available",
+      "bus": "apb",
+      "features": ["rx", "tx", "dma"],
+      "constraints": ["shares pins with FLEXCOMM0"]
+    },
+    {
+      "instance": "ADC0",
+      "type": "adc",
+      "status": "available",
+      "bus": "apb",
+      "channels": 16,
+      "features": ["12bit", "hardware_trigger"]
+    }
+  ],
+  "source_documents": [
+    {
+      "file_name": "replace_with_real_datasheet.pdf",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "doc_type": "datasheet",
+      "revision": "replace"
+    }
+  ]
+}
