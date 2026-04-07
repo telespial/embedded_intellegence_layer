@@ -1,4 +1,4 @@
-# Embedded Intelligence Layer (EIL) License
+Machine Readble Datasheet License
 
 Copyright (c) 2026 Richard Haberkern
 
