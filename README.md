@@ -207,8 +207,3 @@ An MRD-compliant description of a microcontroller, processor, or accelerator **S
 
 See `LICENSE.md` for terms.
 
-## 3. Machine Readable Datasheet (MRD) Format
-
-MRD is serialized as `.msd` with media type:
-
-
