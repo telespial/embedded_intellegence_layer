@@ -13,7 +13,7 @@
 
 Firmware development for microcontrollers and processors depends on interpreting datasheets, programming reference manuals, hardware reference manuals, pin configuration guides, and errata. These documents collectively define the firmware-visible programming model of a device, yet are expressed primarily in natural language intended for human interpretation. This fragmentation introduces ambiguity and limits automation.
 
-This document introduces the **Machine Readable Datasheet (MRD)**, a specification that encodes the complete firmware-visible programming model of a hardware device—including hardware pins, pin multiplexing, registers, functional blocks, interfaces, operational constraints, and documented errata—as a single validated, machine-readable firmware contract.
+This document introduces the **Machine Readable Datasheet (MRD)**, a specification that encodes the complete firmware-visible programming model of a hardware device including hardware pins, pin multiplexing, registers, functional blocks, interfaces, operational constraints, and documented errata as a single validated, machine-readable firmware contract.
 
 MRD replaces fragmented datasheets and programming manuals with a deterministic representation sufficient for automated firmware generation without interpretation of informal documentation.
 
